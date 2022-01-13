@@ -39,6 +39,7 @@ gem 'jbuilder', '~> 2.7'
 # image uploads to Amazon S3
 gem 'carrierwave', '~> 2.0'
 gem 'fog', '~> 1.38.0'
+gem 'fog-aws'
 
 # image resizing
 gem 'mini_magick'
