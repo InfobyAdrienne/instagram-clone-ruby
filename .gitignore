@@ -6,7 +6,6 @@
 
 # Ignore bundler config.
 /.bundle
-/config/locales/application.yml
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
