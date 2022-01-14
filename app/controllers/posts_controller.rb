@@ -8,9 +8,9 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      redirect_to :dashboard_path, flash: { success: "Post was created successfully" }
+      redirect_to dashboard_path, flash: { success: "Post was created successfully" }
     else
-      redirect_to :new_post_path, flash: { danger: "Post was not saved correctly" }
+      redirect_to new_post_path, flash: { danger: "Post was not saved correctly" }
     end
     
   end

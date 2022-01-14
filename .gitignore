@@ -31,7 +31,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-/config/locales/application.yml 
 
 /public/packs
 /public/packs-test
@@ -40,4 +39,5 @@
 yarn-debug.log*
 .yarn-integrity
 
-/config/*.yml
+# Ignore application configuration
+/config/application.yml
