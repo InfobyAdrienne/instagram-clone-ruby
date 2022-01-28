@@ -11,6 +11,11 @@
       <div>
         <%= image_tag post.image.url, class: "img img-fluid" %>
       </div>
+
+      <div class="post-details">
+      <%= simple_format post.description %>
+      </div>
+
       <% end %>
     </div>
 
