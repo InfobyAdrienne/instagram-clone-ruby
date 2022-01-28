@@ -37,13 +37,14 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 # image uploads to Amazon S3
+gem 'carrierwave-aws'
 gem 'carrierwave', '~> 2.0'
 gem 'fog', '~> 1.38.0'
 gem 'fog-aws'
+gem 'aws-sdk-rails'
 
 # image resizing
 gem 'mini_magick'
-
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
