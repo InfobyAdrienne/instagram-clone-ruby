@@ -12,7 +12,16 @@
         <%= image_tag post.image.url, class: "img img-fluid" %>
       </div>
 
+
+      
+
       <div class="post-details">
+
+        <div class="post-actions">
+          <i><span class="fa fa-heart fa-2x active post-like"></span></i>
+          <i><span class="fa fa-comment fa-2x post-comment"></span></i>
+        </div>
+
       <p><strong><%= post.total_likes %> likes</strong></p>
       <p><strong><%= link_to post.account.username, profile_path(post.account.username), class: "text-dark" %></strong></p>
       
@@ -26,11 +35,16 @@
 
     <div class="col-4">
     <div class="account-summary">
-    <p><strong><%= current_account.username %><br /></strong>
-    <%= current_account.full_name %></p>
+     <p>
+     <%= link_to (image_tag current_account.image.thumb.url, class: "img-circle"), profile_path(current_account.username) if current_account.image.present?  %>
+   <strong><%= current_account.username %><br /></strong>
+    <%= current_account.full_name %>
+    </p>
     </div>
     
     <div class="follower-suggestions">
+    <%= link_to "View All", "#", class:"float-end text-dark" %>
+    <p class="text-muted">Suggestions for you</p>
     </div>
 
     </div>

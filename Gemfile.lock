@@ -282,6 +282,8 @@ GEM
     fog-xml (0.1.4)
       fog-core
       nokogiri (>= 1.5.11, < 2.0.0)
+    font-awesome-rails (4.7.0.7)
+      railties (>= 3.2, < 7)
     formatador (0.3.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -461,6 +463,7 @@ DEPENDENCIES
   figaro
   fog (~> 1.38.0)
   fog-aws
+  font-awesome-rails
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mini_magick

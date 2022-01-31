@@ -3,6 +3,8 @@ class Post < ApplicationRecord
   mount_uploader :image, ImageUploader
   belongs_to :account
 
+  has_many :likes
+  
   before_create :set_active
 
   # for deletion purposes later 
