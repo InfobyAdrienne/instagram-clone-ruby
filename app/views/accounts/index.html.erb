@@ -12,14 +12,11 @@
         <%= image_tag post.image.url, class: "img img-fluid" %>
       </div>
 
-
-      
-
       <div class="post-details">
 
         <div class="post-actions">
-          <i><span class="fa fa-heart fa-2x active post-like"></span></i>
-          <i><span class="fa fa-comment fa-2x post-comment"></span></i>
+          <i class="fa fa-heart like-<%= post.id %> fa-2x post-like" data-id="<%= post.id %>"></i>
+          <i class="fa fa-comment fa-2x post-comment"></i>
         </div>
 
       <p><strong><%= post.total_likes %> likes</strong></p>

@@ -22,17 +22,18 @@
 
 .post-actions { 
   margin-bottom: 20px;
+  
   i { 
     margin-right: 10px;
     color: #ddd;
     cursor: pointer;
   }
 
-  i:hover {
-    color: #999;
+  i:active { 
+    color: rgb(85, 85, 85);
   }
 
-  i:active { 
+  i:hover {
     color: #555;
   }
 }

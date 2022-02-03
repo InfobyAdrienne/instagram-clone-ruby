@@ -82,3 +82,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Installing fot awesome for the like actions
 gem "font-awesome-rails"
 
+# Installing jquery
+gem 'jquery-rails'
+

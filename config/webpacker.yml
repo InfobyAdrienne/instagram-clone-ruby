@@ -33,6 +33,9 @@ default: &default
     - .woff2
 
   extensions:
+    - .js.erb
+    - .erb
+    - .jsx
     - .mjs
     - .js
     - .sass
@@ -81,9 +84,10 @@ test:
 
 production:
   <<: *default
+  compile: true
 
   # Production depends on precompilation of packs prior to booting for performance.
-  compile: false
+  # compile: false
 
   # Extract and emit a css file
   extract_css: true
