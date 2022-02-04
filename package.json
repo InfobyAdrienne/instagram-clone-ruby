@@ -8,6 +8,7 @@
     "@rails/webpacker": "5.4.3",
     "expose-loader": "^3.1.0",
     "jquery": "^3.6.0",
+    "jQuery": "^1.7.4",
     "rails-erb-loader": "^5.5.2",
     "turbolinks": "^5.2.0",
     "webpack": "^4.46.0",

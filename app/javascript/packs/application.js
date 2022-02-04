@@ -21,13 +21,25 @@
 // require("@rails/activestorage").start()
 // require("channels")
 
+import $ from "expose-loader?exposes=$,jQuery!jquery";
+import { concat } from "expose-loader?exposes=_.concat!lodash/concat";
+import {
+  map,
+  reduce,
+} from "expose-loader?exposes=_.map|map,_.reduce|reduce!underscore";
+
 import Rails from "@rails/ujs";
 import Turbolinks from "turbolinks";
 import * as ActiveStorage from "@rails/activestorage";
 import "channels";
 
-global.jQuery, global.$ = require("jquery");
-window.$ = window.JQuery = JQuery;
+import jquery from "jquery";
+window.$ = window.jquery = jquery;
+
+window.jQuery = $;
+window.$ = $; 
+
+
 
 Rails.start();
 Turbolinks.start();

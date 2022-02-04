@@ -1,5 +1,5 @@
-<% if @success == true %>
-  $(".like-<%= @post_id %>").addClass("active");
-<% elsif @success == false %>
-  $(".like-<%= @post_id %>").removeClass("active");
-<% end %>
+  <% if @success == true %>
+      $(".like-<%= @post_id %>").addClass("active");
+    <% elsif @success == false %>
+      $(".like-<%= @post_id %>").removeClass("active");
+    <% end %>
