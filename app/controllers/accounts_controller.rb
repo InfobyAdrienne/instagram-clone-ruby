@@ -5,6 +5,7 @@ class AccountsController < ApplicationController
   def index
     # user feed
     @posts = Post.active
+    @follower_suggestions = Account.where.not(id: current_account.id )
   end 
 
   def profile
