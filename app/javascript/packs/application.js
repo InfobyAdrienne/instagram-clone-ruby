@@ -15,31 +15,17 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-// console.log('Hello World from Webpacker')
-// require("@rails/ujs").start()
-// require("turbolinks").start()
-// require("@rails/activestorage").start()
-// require("channels")
-
-import $ from "expose-loader?exposes=$,jQuery!jquery";
-import { concat } from "expose-loader?exposes=_.concat!lodash/concat";
-import {
-  map,
-  reduce,
-} from "expose-loader?exposes=_.map|map,_.reduce|reduce!underscore";
-
-import Rails from "@rails/ujs";
-import Turbolinks from "turbolinks";
-import * as ActiveStorage from "@rails/activestorage";
-import "channels";
+console.log('Hello World from Webpacker')
+require("@rails/ujs").start()
+require("turbolinks").start()
+require("@rails/activestorage").start()
+require("channels")
 
 import jquery from "jquery";
 window.$ = window.jquery = jquery;
 
 window.jQuery = $;
 window.$ = $; 
-
-
 
 Rails.start();
 Turbolinks.start();

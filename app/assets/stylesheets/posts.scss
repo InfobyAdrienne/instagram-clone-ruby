@@ -22,15 +22,15 @@
 
 .post-actions { 
   margin-bottom: 20px;
-  
+
+  .active { 
+    color: red;
+  }
+
   i { 
     margin-right: 10px;
     color: #ddd;
     cursor: pointer;
-  }
-
-  i:active { 
-    color: rgb(85, 85, 85);
   }
 
   i:hover {
