@@ -19,8 +19,8 @@
           <i class="fa fa-comment fa-2x post-comment"></i>
         </div>
 
-      <p><strong><%= post.total_likes_count %> likes</strong></p>
-      <p><strong><%= link_to post.account.username, profile_path(post.account.username), class: "text-dark" %></strong></p>
+      <p><strong id="<%= post.id %>-likes" ><%= post.total_likes_count %> likes</strong></p>
+      <p><strong id="<%= post.id %>-comments"><%= link_to post.account.username, profile_path(post.account.username), class: "text-dark" %></strong></p>
       
       <%= simple_format post.description %>
 
