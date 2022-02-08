@@ -14,11 +14,13 @@ class Account < ApplicationRecord
   end 
 
   def total_followers
-    0
+    Follower.where(following_id: self.id).count 
+    # Look for how many time this account id appears in the following_id column
   end 
 
   def total_following
-    0
+    Follower.where(follower_id: self.id).count 
+    # Look for how many time this account id appears in the follower_id column
   end 
 
 end
