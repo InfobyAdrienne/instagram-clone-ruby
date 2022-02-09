@@ -2,7 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-@import url('//fonts.cdnfonts.com/css/billabong');
+@import 'font_awesome5_webfont';
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import '@fortawesome/fontawesome-free/scss/brands';
+@import '@fortawesome/fontawesome-free/scss/solid';
+@import '@fortawesome/fontawesome-free/scss/regular';
+@import '@fortawesome/fontawesome-free/scss/v4-shims';
 
 .navbar{
 /*   z-index should be above .close-navbar-toggler */
@@ -31,4 +37,9 @@
 
 .close-navbar-toggler.collapsed{
   z-index:-1;
+}
+
+.icon {
+  color: black;
+  padding: 10px;
 }

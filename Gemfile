@@ -79,8 +79,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Installing fot awesome for the like actions
-gem "font-awesome-rails"
+# Installing font awesome for the like actions
+gem 'font_awesome5_rails'
 
 # Installing jquery
 gem 'jquery-rails'
