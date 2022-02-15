@@ -37,3 +37,13 @@
     color: #555;
   }
 }
+
+.comment-box {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+
+.post-comment:focus {
+  box-shadow: none !important;
+}
