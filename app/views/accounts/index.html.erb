@@ -47,11 +47,11 @@
 
     <div class="col-4">
     <div class="account-summary">
-     <p>
-     <%= link_to (image_tag current_account.image.thumb.url, class: "img-circle"), profile_path(current_account.username) if current_account.image.present?  %>
-   <strong><%= current_account.username %><br /></strong>
-    <%= current_account.full_name %>
-    </p>
+      <p class="m-0">
+        <%= link_to (image_tag current_account.image.thumb.url, class: "img-circle float-left m-r-15"), profile_path(current_account.username) if current_account.image.present?  %>
+        <strong><%= current_account.username %><br /></strong>
+        <%= current_account.full_name %>
+     </p>
     </div>
     
     <div class="follower-suggestions">
