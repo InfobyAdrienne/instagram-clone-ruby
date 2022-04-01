@@ -47,3 +47,19 @@
 .post-comment:focus {
   box-shadow: none !important;
 }
+
+.comments-feed {
+  height: 200px; 
+  overflow: scroll;
+}
+
+.post-description {
+  margin-bottom: 30px;
+  font-style: italic; 
+}
+
+.post-details .post-actions {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+}

@@ -1,5 +1,5 @@
   <!-- This is for viewing on ly one post at a time -->
-<div class="container">
+<div class="container post-details">
   <div class="row">
     <div class="col-8">
       <div class="insta-post">
@@ -12,15 +12,19 @@
         <%= link_to @post.account.username, profile_path(@post.account.username), class: "text-dark"  %>
       </div>
       <div class="post-details">
-        <%= simple_format @post.description %>
-        <p class="text-muted"><%= time_ago_in_words @post.created_at %> ago</p>
+        <div class="comments-feed">
+          <div class="post-description">
+            <%= simple_format @post.description %>
+          </div>
+          <%= render "posts/comments", post: @post %>
+        </div>
         <div class="post-actions" >
           <i class="fa fa-heart like-<%= @post.id %> <%= 'active' if post_liked_by_user?(@post.id) %> fa-2x post-like" data-id="<%= @post.id %>"></i>
-          <i class="fa fa-comment fa-2x post-comment"></i>
+          <i class="fa fa-comment fa-2x post-comment" id="post-comment"></i>
         </div>
+       
         <p><strong id="<%= @post.id %>-likes" ><%= @post.total_likes_count %> likes</strong></p>
-        <p><strong id="<%= @post.id %>-comments"><%= link_to @post.account.username, profile_path(@post.account.username), class: "text-dark" %></strong></p>
-        <%= render "posts/comments", post: @post %>
+        <p class="text-muted"><%= time_ago_in_words @post.created_at %> ago</p>
       </div>
       <div class="comment-box">
         <%= form_for @comment do |f| %>
