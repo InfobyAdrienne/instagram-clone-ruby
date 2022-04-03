@@ -63,3 +63,32 @@
   padding-top: 20px;
   margin-top: 20px;
 }
+
+.post-square {
+  height: 290px;
+  width: 290px;
+  overflow: hidden;
+  background-size: cover !important;
+}
+
+.profile-stats {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+
+.insta-post:hover {
+  .profile-stats {
+    display: block;
+  }
+}
+.inner {
+  margin-top: 45%;
+}
+
+.m-l-15 {
+  margin-left: 15px;
+}
