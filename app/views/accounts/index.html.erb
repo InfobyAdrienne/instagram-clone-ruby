@@ -21,7 +21,7 @@
           <p><strong id="<%= post.id %>-likes" ><%= post.total_likes_count %> likes</strong></p>
           <p><strong id="<%= post.id %>-comments"><%= link_to post.account.username, profile_path(post.account.username), class: "text-dark" %></strong></p>
           <%= simple_format post.description %>
-          <p class="text-muted"><%= time_ago_in_words post.created_at %> ago</p>
+          <p class="text-muted small"><%= time_ago_in_words post.created_at %> ago</p>
           <%= render "posts/comments", post: post %>
         </div>
         <div class="comment-box">
