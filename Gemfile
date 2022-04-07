@@ -85,3 +85,5 @@ gem 'font_awesome5_rails'
 # Installing jquery
 gem 'jquery-rails'
 
+gem 'omniauth-facebook'
+
